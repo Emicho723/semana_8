@@ -1,0 +1,65 @@
+Te dejo el **pseudocódigo claro para que lo puedas copiar**:
+
+```
+Inicio
+
+Escribir "Ingrese el número de personas"
+Leer n
+
+Para i ← 1 Hasta n Hacer
+    Escribir "Ingrese el día de nacimiento de la persona ", i
+    Leer dia[i]
+
+    Escribir "Ingrese el mes de nacimiento de la persona ", i
+    Leer mes[i]
+
+    Escribir "Ingrese el año de nacimiento de la persona ", i
+    Leer anio[i]
+FinPara
+
+coincidencia ← Falso
+
+Para i ← 1 Hasta n-1 Hacer
+    Para j ← i+1 Hasta n Hacer
+
+        Si dia[i] = dia[j] Y mes[i] = mes[j] Entonces
+            Escribir "Coincidencia encontrada:"
+            Escribir dia[i], "/", mes[i], "/", anio[i]
+            coincidencia ← Verdadero
+        FinSi
+
+    FinPara
+FinPara
+
+Si coincidencia = Falso Entonces
+
+    Para i ← 1 Hasta n Hacer
+        diasTotales[i] ← (mes[i] * 30) + dia[i]
+    FinPara
+
+    menorDiferencia ← 100000
+
+    Para i ← 1 Hasta n-1 Hacer
+        Para j ← i+1 Hasta n Hacer
+
+            diferencia ← ValorAbsoluto(diasTotales[i] - diasTotales[j])
+
+            Si diferencia < menorDiferencia Entonces
+                menorDiferencia ← diferencia
+                f1 ← i
+                f2 ← j
+            FinSi
+
+        FinPara
+    FinPara
+
+    Escribir "Las fechas más cercanas son:"
+    Escribir dia[f1], "/", mes[f1], "/", anio[f1]
+    Escribir dia[f2], "/", mes[f2], "/", anio[f2]
+
+FinSi
+
+Fin
+```
+
+Si quieres, también puedo hacerte **la versión en C++**, que probablemente es lo que te van a pedir después del pseudocódigo.
