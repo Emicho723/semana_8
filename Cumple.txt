@@ -1,6 +1,3 @@
-Te dejo el **pseudocódigo claro para que lo puedas copiar**:
-
-```
 Inicio
 
 Escribir "Ingrese el número de personas"
