@@ -57,6 +57,5 @@ Si coincidencia = Falso Entonces
 FinSi
 
 Fin
-```
 
-Si quieres, también puedo hacerte **la versión en C++**, que probablemente es lo que te van a pedir después del pseudocódigo.
+
